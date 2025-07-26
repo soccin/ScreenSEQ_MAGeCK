@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
     exit
 fi
 
-mkdir -p $DDIR/mageck
-rsync -avP --exclude-from="EXC" counts $DDIR/mageck
-rsync -avP --exclude-from="EXC" out $DDIR/mageck
+mkdir -p $DDIR/sgrna/mageck
+rsync -avP --exclude-from="EXC" counts $DDIR/sgna/mageck
+rsync -avP --exclude-from="EXC" out $DDIR/sgna/mageck
 
