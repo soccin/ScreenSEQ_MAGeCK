@@ -12,12 +12,14 @@ for di in $(echo $F1); do
 done
 sampleLabels=${sampleLabels:1}
 
+projNo=$(pwd | tr '/' '\n' | fgrep Proj_ | sed 's/Proj_//' | head -1)
+
 . ve.mageck/bin/activate
 
 mageck count \
-    -l Brunello_NoDatesLibFile.csv \
-    --control-sgrna controlProbes.txt \
-    -n p17150 \
+    -l dat/Brunello_NoDatesLibFile.csv \
+    --control-sgrna dat/controlProbes.txt \
+    -n  $projNo \
     --sample-label $sampleLabels \
     --fastq $F1
 #    --fastq-2 $F2
