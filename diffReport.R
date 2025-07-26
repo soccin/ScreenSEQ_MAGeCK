@@ -1,0 +1,5 @@
+require(tidyverse)
+xx=fs::dir_ls("out",recur=T,regex="gene") %>% map(read_tsv) %>% bind_rows(.id="comparison")
+pos=xx %>% mutate(comparison=basename(dirname(comparison))) %>% arrange(`pos|fdr`) %>% filter(`pos|fdr`<0.05) %>% select(1:3,matches("pos"))
+neg=xx %>% mutate(comparison=basename(dirname(comparison))) %>% arrange(`neg|fdr`) %>% filter(`neg|fdr`<0.05) %>% select(1:3,matches("neg"))
+write_xlsx(list(pos=pos,neg=neg),"Proj_17150_DiffGenes_MAGeCK.xlsx")
