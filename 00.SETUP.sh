@@ -1,4 +1,3 @@
-module load gcc/11.2.0
 mkdir src
 wget https://sourceforge.net/projects/mageck/files/0.5/mageck-0.5.9.5.tar.gz/download -O src/mageck-0.5.9.5.tar.gz
 tar xvfz src/mageck-0.5.9.5.tar.gz
