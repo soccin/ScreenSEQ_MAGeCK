@@ -12,7 +12,7 @@ MAGeCK version of ScreenSEQ pipeline
 
 ## Testing metadata files
 
-For the differential analysis (testing) you need to metadata files
+For the differential analysis (testing) you need two metadata files
 
 ### key.csv
 
@@ -27,7 +27,7 @@ sampleB-rep1,sampleB
 
 *N.B.* no header
 
-### comparison
+### comparisons
 
 This file is tab delimited Target vs Control
 ```
