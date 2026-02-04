@@ -2,7 +2,7 @@
 
 #
 # testMAGeCK.sh - Run MAGeCK test for differential analysis
-# Version: v1.0.0
+# Version: v1.0.1
 #
 # This script performs differential analysis between target and control samples
 # using MAGeCK test with counts data.
@@ -24,7 +24,7 @@
 
 usage() {
     cat << EOF
-testMAGeCK.sh v1.0.0
+testMAGeCK.sh v1.0.1
 
 Usage: $(basename $0) <target_group> <control_group>
 

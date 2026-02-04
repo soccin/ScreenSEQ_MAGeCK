@@ -2,7 +2,7 @@
 
 #
 # countMAGeCK.sh - Run MAGeCK count on paired FASTQ files
-# Version: v1.0.0
+# Version: v1.0.1
 #
 # This script finds R1 (and optionally R2) FASTQ files in a directory,
 # extracts sample labels, and runs MAGeCK count with the Brunello library.
@@ -24,7 +24,7 @@
 
 usage() {
     cat << EOF
-countMAGeCK.sh v1.0.0
+countMAGeCK.sh v1.0.1
 
 Usage: $(basename $0) [--no-R2] <fastq_directory>
 

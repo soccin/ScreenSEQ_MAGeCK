@@ -2,7 +2,7 @@
 
 MAGeCK version of ScreenSEQ pipeline for CRISPR screen analysis
 
-**Version:** v1.0.0
+**Version:** v1.0.1
 
 ## TLDR
 
@@ -285,7 +285,7 @@ Rscript diffReport.R
 
 ## Version Information
 
-- Pipeline version: v1.0.0
+- Pipeline version: v1.0.1
 - MAGeCK version: v0.5.9.5
 - Python version: 3.9.7
 
