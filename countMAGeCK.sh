@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SDIR=$(dirname "$(readlink -f "$0")")
+
 FDIR=$1
 
 F1=$(find $FDIR -name '*.gz' | fgrep _R1_ | sort -V)
@@ -14,15 +16,15 @@ sampleLabels=${sampleLabels:1}
 
 projNo=$(pwd | tr '/' '\n' | fgrep Proj_ | sed 's/Proj_//' | head -1)
 
-. ve.mageck/bin/activate
+. $SDIR/ve.mageck/bin/activate
 
 mageck count \
-    -l dat/Brunello_NoDatesLibFile.csv \
+    -l $SDIR/dat/Brunello_NoDatesLibFile.csv \
     --control-sgrna dat/controlProbes.txt \
     -n  $projNo \
     --sample-label $sampleLabels \
-    --fastq $F1
-#    --fastq-2 $F2
+    --fastq $F1 \
+    --fastq-2 $F2
 
 # mageck count \
 #     -l library.txt \
