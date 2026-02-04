@@ -2,6 +2,8 @@
 
 MAGeCK version of ScreenSEQ pipeline
 
+**Version:** v1.0.0
+
 ## Usage:
 
 - Remember to merge the FASTQ files with `mergeFASTQBySample.sh`
