@@ -1,8 +1,8 @@
 # VERSION
 
-**Version:** v1.0.0
-**Date:** 2026-02-04
-**Tag:** v1.0.0
+- **Version:** v1.0.0
+- **Date:** 2026-02-04
+- **Tag:** v1.0.0
 
 ## Components
 
