@@ -101,7 +101,7 @@ projNo=$(pwd | tr '/' '\n' | fgrep Proj_ | sed 's/Proj_//' | head -1)
 # Run MAGeCK count with Brunello library
 mageck count \
     -l $SDIR/dat/Brunello_NoDatesLibFile.csv \
-    --control-sgrna dat/controlProbes.txt \
-    -n  $projNo \
+    --control-sgrna $SDIR/dat/controlProbes.txt \
+    -n $projNo \
     --sample-label $sampleLabels \
     $FASTQ
